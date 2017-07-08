@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.azhansy.kolinandroiddemo.kotlin.Kotlin01Activity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick1"
+        android:padding="10dp"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick1"
+        android:padding="10dp"
+        android:text="延迟加载"/>
+
+    <include layout="@layout/layout_of_kotlin"/>
+</LinearLayout>
