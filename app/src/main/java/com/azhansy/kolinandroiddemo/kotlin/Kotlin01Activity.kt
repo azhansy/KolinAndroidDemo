@@ -54,9 +54,15 @@ class Kotlin01Activity : AppCompatActivity() {
         Log.d(TAG_LOG, person.name)
     }
 
-    fun filter() {
-//        val list = MutableList(0, 1, 2, 3)
-//        list.filter { it > 10 }.map { element -> element * 2 }
+    fun filter(view: View) {
+        val list = listOf(0, 1, 2, 3)
+        list.filter { it > 2 }
+                .map { element -> element * 2 }
+                .forEach {
+                    Log.d(TAG_LOG, it.toString())
+                }
+
+
     }
 
     companion object { // 这些 companion 对象是类里面的单例对象
